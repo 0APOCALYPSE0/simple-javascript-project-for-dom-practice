@@ -1,0 +1,36 @@
+h1{
+  text-align: center;
+  color: #900C3F;
+  margin-top: 30px;
+}
+div{
+  text-align: center;
+  background: cornsilk;
+  border-bottom: 2px solid #900C3F;
+  border-top: 2px solid #900C3F;
+  font-size:20px;
+  padding:15px;
+  font-weight:200px;
+}
+table{
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 700px;
+  border-collapse: collapse;
+}
+table>thead>tr{
+  background:#900C3F;
+  color:cornsilk;
+  padding: 20px;
+  border-bottom: 2px solid #900C3F;
+}
+table>tbody>tr{
+  border-bottom: 2px solid #900C3F;
+}
+table>tbody>tr>td,table>thead>tr>th{
+  padding: 10px;
+}
+select,input[type=number]{
+  width:150px;
+  height:25px;
+}

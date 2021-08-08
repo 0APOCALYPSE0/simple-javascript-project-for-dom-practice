@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <title>StudentDetails</title>
+</head>
+
+<body onload="onPageLoad()">
+    <h1>Student Details</h1>
+    <div>
+        <label>Subject</label>
+        <select id="subjects">
+            <option id="opt0" value="">-- Select Subject --</option>
+            <option id="opt1" value="English">English</option>
+            <option id="opt2" value="Maths">Maths</option>
+            <option id="opt3" value="Science">Science</option>
+            <option id="opt4" value="SocialScience">Social Science</option>
+        </select>
+        <label>Filter By</label>
+        <input type="radio" id="above" name="mode" value="above" onclick="filterBy()" checked />
+        <label for="above">above</label>
+        <input type="radio" id="below" name="mode" value="below" onclick="filterBy()" />
+        <label for="below">below</label>
+        <input type="radio" id="between" name="mode" value="between" onclick="filterBy()" />
+        <label for="between">between</label>
+        <input id="mark" type="number">
+        <label id="to" style="display: none;">to</label>
+        <input id="maxMark" type="number" style="display: none;" id="inputMark">
+        <button id="filter" onclick="filterClick()">Filter</button>
+        <button id="clear" onclick="Clear()">Clear</button>
+    </div>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social Science</th>
+            </tr>
+        </thead>
+        <tbody id="studentData">
+
+        </tbody>
+    </table>
+
+</body>
+<script src="index.js"></script>
+
+</html>
